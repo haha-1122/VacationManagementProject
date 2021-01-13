@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<script src="https://code.jquery.com/jquery-git.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+	<script src="./slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+
+</head>
+
+<body>
+	<header>
+		<div id="fixedHeaderDiv">
+			<div>
+				<div class="fixedSearchDiv">
+					<input type="text" class="SearchInput">
+					<button><img src="./img/search_icon.png" alt=""></button>
+				</div>
+			</div>
+		</div>
+		<div id="mainHeader">
+			<div id="headerLogo">
+				<h1><a href="./index.html"><img src="./img/logo2.png" alt="LOGO"></a></h1>
+			</div>
+			<div id="headerMainNav">
+				<nav>
+					<ul class="NavLevel1">
+						<li myindexs=0 length=5>테마</li>
+						<li myindexs=1 length=9>국내</li>
+						<li myindexs=2 length=14>해외</li>
+						<li myindexs=3 length=15>일정</li>
+					</ul>
+					<!--<ul class="NavLevel2">
+						<li>크루즈</li>
+						<li>트레킹</li>
+						<li>허니문</li>
+						<li>골프</li>
+						<li>성지순례</li>
+					</ul>
+					<ul class="NavLevel2">
+						<li>제주도</li>
+						<li>바다</li>
+						<li>산</li>
+						<li>도시</li>
+					</ul>
+					<ul class="NavLevel2">
+						<li>유럽</li>
+						<li>미국</li>
+						<li>호주</li>
+						<li>일본</li>
+						<li>중국</li>
+						<li>동남아</li>
+						<li>아프리카</li>
+						<li>괌</li>
+						<li>사이판</li>
+					</ul>
+					<div class="NavLevel2">
+
+					</div>
+				-->
+					<div class="NavLevel3Div">
+						<div class="SlideNav">
+							<div class="NavLevel3">
+								<div>
+									<h3>테마</h3>
+									<h3>크루즈</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>남극</li>
+										<li>알래스카</li>
+										<li>하와이</li>
+										<li>동남아</li>
+										<li>한국/중국/일본</li>
+										<li>캐나다</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>럭셔리</li>
+										<li>온가족크루즈</li>
+										<li>허니문</li>
+										<li>특가</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>테마</h3>
+									<h3>트레킹</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>히말라야</li>
+										<li>유렵</li>
+										<li>아시아</li>
+										<li>아메리카</li>
+										<li>아프리카</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>높은 난이도</li>
+										<li>중간 난이도</li>
+										<li>가벼운 난이도</li>
+										<li>럭셔리</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>테마</h3>
+									<h3>허니문</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>유럽</li>
+										<li>동남아</li>
+										<li>아프리카</li>
+										<li>미국</li>
+										<li>괌</li>
+										<li>사이판</li>
+										<li>몰디브</li>
+										<li>아시아</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>실속형</li>
+										<li>럭셔리</li>
+										<li>크루즈</li>
+										<li>특가</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>테마</h3>
+									<h3>골프</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>태국</li>
+										<li>일본</li>
+										<li>유럽</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>럭셔리</li>
+										<li>실속형</li>
+										<li>특가</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>테마</h3>
+									<h3>성지순례</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>동남아</li>
+										<li>아시아</li>
+										<li>유럽</li>
+										<li>중동</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>기독교</li>
+										<li>가톨릭</li>
+										<li>불교</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>국내</h3>
+									<h3>제주도</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>제주시</li>
+										<li>애월</li>
+										<li>중문</li>
+										<li>서귀포</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>배낭여행</li>
+										<li>렌트 여행</li>
+										<li>캠핑카</li>
+										<li>나홀로</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>국내</h3>
+									<h3>바다</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>강릉</li>
+										<li>인천</li>
+										<li>여수</li>
+										<li>부산</li>
+										<li>제주도</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>친구와</li>
+										<li>연인과</li>
+										<li>나홀로 배낭여행</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>국내</h3>
+									<h3>산</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>한라산</li>
+										<li>설악산</li>
+										<li>지리산</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>서울 근교</li>
+										<li>높은 산</li>
+										<li>가볍게 등산</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>국내</h3>
+									<h3>도시</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+									<ul>
+										<li>서울</li>
+										<li>부산</li>
+										<li>인천</li>
+										<li>광주</li>
+									</ul>
+								</div>
+								<div>
+									<h3>테마별</h3>
+									<ul>
+										<li>럭셔리</li>
+										<li>도시탐방</li>
+									</ul>
+								</div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>해외</h3>
+									<h3>유럽</h3>
+									<button>바로가기</button>
+								</div>
+								<div>
+									<h3>지역별</h3>
+								</div>
+								<div></div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>해외</h3>
+									<h3>미국</h3>
+									<button>바로가기</button>
+								</div>
+								<div></div>
+								<div></div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>해외</h3>
+									<h3>호주</h3>
+									<button>바로가기</button>
+								</div>
+								<div></div>
+								<div></div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>해외</h3>
+									<h3>아시아</h3>
+									<button>바로가기</button>
+								</div>
+								<div></div>
+								<div></div>
+							</div>
+							<div class="NavLevel3">
+								<div>
+									<h3>해외</h3>
+									<h3>아프리카</h3>
+									<button>바로가기</button>
+								</div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div id="headerSubLogin">
+				<div>
+					<input type="text" id="headerSearch">
+					<button><img src="./img/search_icon.png"></button>
+				</div>
+				<div>
+					<input type="button" id="headerLogin" value="로그인">
+					<input type="button" id="headerSignUp" value="회원가입" onclick="location.href='./login.html'">
+				</div>
+			</div>
+			<!--<div id="headerSubNav">
+				<nav><a href="">&#9776;</a></nav>
+			</div>-->
+		</div>
+	</header>
+	<section>
+		<div class="MainImgSlides">
+			<div>
+				<img src="./img/slide_background/swiss01.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/slide_background/boracay01.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/slide_background/london01.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/slide_background/newyork01.jpg" alt="">
+			</div>
+		</div>
+		<div class="InformSlides">
+			<div>요즘 뜨는 여행지</div>
+			<div>특가</div>
+			<div>호텔</div>
+			<div>패키지 여행</div>
+		</div>
+		<div class="BrightMode">
+			<button type="button" name="lightDarkMode" id="lightMode" onclick="BrightMode(0);">☀</button>
+			<button type="button" name="DarkMode" id="darkMode" onclick="BrightMode(1);">🌙</button>
+			<button type="button" name="up" id="up" onclick="window.scrollTo(0,0);"><img src="./img/upArrow_icon.png"
+					alt="" srcset=""></button>
+			<button id="menuNav"><img src="./img/menu_icon.png"></button>
+			<Nav class="MenuNav">
+				<div>
+					<input type="button" value="로그인">
+					<input type="button" value="회원가입">
+					<input type="button" value="테마 / 해외 / 국내 / 일정" onclick="window.	scrollTo(0,0);">
+					<input type="button" value="마이페이지">
+				</div>
+			</Nav>
+		</div>
+	</section>
+	<footer>
+		<div id="footerHeader">
+			<ul>
+				<li>1:1문의</li>
+				<li>견적 문의</li>
+				<li>기업/단체 문의</li>
+				<li>공지사항</li>
+			</ul>
+			<div>blablablablablablablablablabla</div>
+			<button>더보기</button>
+		</div>
+		<div id="footerLogo">
+			<h1><img src="./img/logo2.png" alt="LOGO"></h1>
+		</div>
+		<div>
+			<p>내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="./script/index.js"></script>
+</body>
+
+</html>

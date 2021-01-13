@@ -1,0 +1,817 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	width: 1900px;
+	font-size:12px;
+}
+ul,li,ol {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+img {
+	border:0;
+}
+address {
+	font-style: normal;
+}
+header,section,footer,nav,article,figure,aside {
+	display:block;
+	margin:0;
+	padding:0;
+}
+button {
+	background:none;
+	border: none;
+	outline: none;
+}
+/* Header */
+header {
+	width: 1920px;
+	height: 130px;
+	top: 0;
+	position: relative;
+	z-index: 1000;
+}
+section {
+	position: relative;
+}
+ul li {
+	display: inline-block;
+}
+input {
+	outline: none;
+	border: 3px solid #1A94EB;
+}
+input:focus {
+	border: 3px solid #0D4CD4;
+	transform: scale(1);
+	transition: 0.3s;
+}
+#mainHeader {
+	width: 1520px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 3px solid #1A94EB;
+	border-radius: 10px;
+}
+
+
+#headerLogo {
+	position: absolute;
+	display: inline-flex;
+	width: 150px;
+	height: 130px;
+	position: relative;
+	align-items: center;
+}
+#headerLogo > h1 > a {
+	display: inline;
+	position: relative;
+}
+#headerLogo > h1 > a > img{
+	width: 80%;
+}
+
+
+#headerMainNav {
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	left: 40px;
+}
+.NavLevel1 {
+	position: absolute;
+	bottom: -36px;
+	left: 20px;
+	display: flex;
+}
+
+.NavLevel1 li {
+	text-align: center;
+	line-height: 64px;
+	width: 200px;
+	height: 64px;
+	border-radius: 15px 15px 0 0;
+	border-color: #1A94EB;
+	transition: transform 0.3s, border 0.3s;
+}
+.MyActive {
+	border: 3px solid #1A94EB;
+	transform: scale(1.05);
+}
+.NavDots {
+	background-color: rgba(255,255,255,0.5);
+	backdrop-filter: blur(3px);
+	box-shadow: 2px 2px 0 0 rgba(20,20,20,0.3);
+	border-radius: 10px;
+	display: flex;
+	width: 1520px;
+	height: 40px;
+	position: absolute;
+	top: -41px;
+	z-index: 1000;
+	overflow: hidden;
+}
+.NavDots li {
+	transition: background-color 0.3s, transform 0.3s;
+}
+.NavDots .slick-active {
+	background-color: rgba(100,100,100,0.3);
+	transform: scale(1.05);
+}
+.NavDots li button {
+	width: 100px;
+	height: 40px;
+	position: relative;
+	top: -10px;
+	font-size: 15px;
+}
+
+
+.NavLevel2 {
+	position: absolute;
+	top: 50px;
+	width: 1520px;
+	height: 30px;
+	left: -200px;
+	background-color: #0D4CD4;
+}
+.NavLevel2 li {
+	font-size: 15px;
+	width: 80px;
+	line-height: 30px;
+	background-color: rebeccapurple;
+}
+
+
+.NavLevel3 {
+	width: 1520px;
+	height: 450px;
+	position: relative;
+	background-color: rgba(255,255,255,0.5);
+	backdrop-filter: blur(8px);
+	border: 0 1px 1px 1px solid #1A94EB;
+	border-radius: 50px;
+	clear: both;
+	display: none;
+}
+.NavLevel3 > div {
+	width: 33.333%;
+	height: 400px;
+	margin-top: 25px;
+	align-items: center;
+	float: left;
+	display: inline-flex;
+	flex-direction: column;
+	border-right: 3px solid rgba(20,20,20,0.3);
+}
+.NavLevel3 > div:first-child {
+	justify-content: center;
+	text-align: center;
+}
+.NavLevel3 > div:first-child > h3 {
+	border-radius: 15px;
+	box-shadow: 0 1px 0 0 rgba(20,20,20,0.3);
+	padding-left: 0;
+}
+.NavLevel3 > div > h3 {
+	width: 200px;
+	height: 60px;
+	padding-left: 10px;
+	line-height: 60px;
+	border-radius: 15px 15px 0 0;
+	background-color: rgba(20, 20, 20, 0.4);
+	margin-top: 10px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.NavLevel3 > div:last-child {
+	border: none;
+}
+.NavLevel3 div ul {
+	background-color: rgba(20, 20, 20, 0.2);
+	border-radius: 0 0 15px 15px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.NavLevel3 div ul li {
+	display: block;
+	margin-top: 5px;
+	justify-items: flex-start;
+	align-items: flex-start;
+	font-size: 25px;
+	width: 200px;
+	padding-left: 10px;
+	transition: transform 0.3s;
+}
+.NavLevel3 div ul li:hover {
+	transform: scale(1.05);
+	color: rgba(255, 255, 255, 0.8);
+}
+.NavLevel3 > div > button {
+	width: 200px;
+	height: 60px;
+	border: 3px solid #0D4CD4;
+	background-color: #1A94EB;
+	border-radius: 15px;
+	margin-top: 10px;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+.NavLevel3Div {
+	position: absolute;
+	width: 1520px;
+	top: 80px;
+	left: -200px;
+}
+.NavLevel3Div .NavSlides_PrevBtn, .NavLevel3Div .NavSlides_NextBtn {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	z-index: 0;
+}
+.NavLevel3Div .NavSlides_PrevBtn {
+	left: 0;
+}
+.NavLevel3Div .NavSlides_NextBtn {
+	right: 0;
+}
+.NavLevel3Div .NavSlides_NextBtn img, .NavLevel3Div .NavSlides_PrevBtn img {
+	width: 80px;
+	height: 80px;
+	opacity: 0.8;
+	display: none;
+}
+
+.SlideNav {
+	display: flex;
+}
+.SlideNav .slick-list {
+	transition: 0.2s;
+}
+
+#headerSubLogin {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+#headerSubLogin div {
+	position: relative;
+}
+#headerSubLogin div button {
+	position: relative;
+	right: 15px;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+}
+#headerSubLogin div button:hover {
+	cursor: pointer;
+}
+#headerSubLogin div button:active {
+	transform: scale(0.95);
+}
+#headerSubLogin div button img {
+	width: 100%;
+	height: 100%;
+}
+#headerLogin, #headerSignUp {
+	font-size: 18px;
+	width: 100px;
+	height: 50px;
+	outline: none;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+#headerLogin:hover, #headerSignUp:hover {
+	transform: scale(1.05);
+	transition: 0.05s;
+}
+#headerLogin:active, #headerSignUp:active {
+	transform: scale(1.1);
+	transition: 0.05s;
+}
+#headerLogin:active {
+	background-color: #C44B00;
+}
+#headerLogin {
+	background-color: #FF8500;
+	border: 3px solid #C44B00;
+}
+
+#headerSignUp {
+	border: 3px solid #0D4CD4;
+	background-color: #1A94EB;
+}
+#headerSignUp:active {
+	background-color: #0D4CD4;
+}
+
+#headerSearch {
+	position: relative;
+	left: 37px;
+	bottom: 8px;
+	z-index: 2;
+	background:none;
+	border: none;
+	border-radius: 10px;
+	width: 50px;
+	height: 53px;
+	font-size: 40px;
+	line-height: 54px;
+	text-align: center;
+	cursor: pointer;
+}
+#headerSearch:focus {
+	border: 3px solid #0D4CD4;
+	transition: 0.3s;
+	transform: scale(1.1);
+	width: 500px;
+	height: 55px;
+	bottom: 13px;
+	text-align: left;
+	padding-left: 15px;
+	font-size: 27px;
+	z-index: 0;
+	cursor: text;
+}
+#headerSearch:hover {
+	
+}
+
+
+#headerSubNav {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	line-height: 50px;
+	right: 0px;
+	bottom: 30px;
+}
+#headerSubNav > nav > a {
+	color: black;
+}
+header > div:first-child {
+	display: none;
+}
+.fixed_header {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 1920px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.3);
+	animation: slide-down 0.4s;
+	backdrop-filter: blur(6px);
+}
+.fixed_header_up {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	width: 1920px;
+	height: 0px;
+	background-color: rgba(255,255,255,0.3);
+	animation: slide-up 0.1s;
+	backdrop-filter: blur(6px);
+}
+@keyframes slide-down {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes slide-up {
+	0% {
+		height: 50px;
+	}
+	100% {
+		height: 0px;
+	}
+}
+
+.fixedSearchDiv button {
+	margin-left: 20px;
+	padding-left: 20px;
+	position: relative;
+	top: 4px;
+	border-left: 2px solid  #1A94EB;
+}
+.fixedSearchDiv button img {
+	width: 30px;
+	height: 30px;
+}
+
+.SearchInput {
+	width: 800px;
+	height: 35px;
+	position: relative;
+	bottom: 5px;
+	border: 3px solid #1A94EB;
+	border-radius: 5px;
+	outline: none;
+	padding-left: 20px;
+}
+/* Section */
+section {
+	max-width: 1900px;
+}
+
+.MainImgSlides {
+	width: 1900px;
+	height: 750px;
+	position: relative;
+}
+.MainImgSlides div img {
+	width: 1900px;
+	height: 750px;
+}
+.MainImgSlides_Dots {
+	position: absolute;
+	bottom: 30px;
+	left: 860px;
+	display: flex;
+	z-index: 2;
+	text-align: center;
+}
+.MainImgSlides_Dots .slick-active button{
+	background-color: rgba(100,100,100,0.3);
+}
+.MainImgSlides_Dots li button {
+	border: 1px solid rgba(20,20,20,0.3);
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	margin-left: 15px;
+	width: 30px;
+	height: 30px;
+}
+.InformSlides {
+	margin-top: 100px;
+}
+.InformSlides > div {
+	width: 1710px;
+	border: 1px solid red;
+	margin: 0 auto;
+	height: 800px;
+	background-color: #1A94EB;
+}
+.InformSlides_PrevBtn, .InformSlides_NextBtn {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+}
+.InformSlides_NextBtn {
+	right: 0;
+}
+.InformSlides_PrevBtn img, .InformSlides_NextBtn img {
+	width: 100%;
+}
+.InformSlides_Dots {
+	position: absolute;
+	display: block;
+	top: -70px;
+	left: 555px;
+	
+}
+.InformSlides_Dots li {
+	width: 200px;
+	height: 70px;
+	border: 1px solid red;
+	text-align: center;
+	line-height: 70px;
+}
+.InformSlides_Dots li button {
+	font-size: 20px;
+	
+}
+.InformSlides_Dots .slick-active {
+	background-color: #1A94EB;
+}
+/*.MainImgSlides button {
+	position: absolute;
+	z-index: 2000;
+}
+.MainImgSlides_PrevBtn {
+	top: 50%;
+	left: 30px;
+}
+.MainImgSlides_NextBtn {
+	top: 50%;
+	right: 0;
+}
+.MainImgSlides button img {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.3);
+	backdrop-filter: blur(3px);
+}*/
+
+
+
+/* Bright Mode */
+.BrightMode {
+	position: fixed;
+	display: flex;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}
+.BrightMode button {
+	background-color: rgba(255,255,255,0.3);
+	backdrop-filter: blur(6px);
+	height: 60px;
+	font-size: 20px;
+	border: none;
+	box-shadow: 2px 2px 0 0 rgba(20,20,20,0.3);
+	border-radius: 50%;
+	display: inline-block;
+	width: 60px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+#lightMode {
+	display: none;
+}
+.BrightMode button:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+.BrightMode button:active {
+	transform: scale(1.1);
+	transition: 0.3s ;
+}
+.BrightMode button:focus {
+	border: none;
+	transition: 0.3s;
+}
+#up img {
+	width: 80%;
+	height: 80%;
+	position: relative;
+	top: 3px;
+	left: 1px;
+	opacity: 0.7;
+}
+.BrightMode button img {
+	width: 140%;
+	height: 140%;
+	position: relative;
+	bottom: 12px;
+	right: 12px;
+}
+.Dark {
+	background-color: #010E3D;
+	color: white;
+}
+.MenuNav {
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	backdrop-filter: blur(6px);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	bottom: 60px;
+	right: 10px;
+	width: 500px;
+	height: 500px;
+	border-radius: 40%;
+	box-shadow: 2px 2px 0 0 rgba(20,20,20,0.3);
+	display: none;
+}
+.MenuNav > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 100px;
+	left: 0;
+} 
+.MenuNav > div > input {
+	width: 300px;
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	border: 3px solid #0D4CD4;
+	background-color: #1A94EB;
+	color: white;
+	font-size: 20px;
+}
+.MenuNav > div > input:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+.MenuNav > div > input:active {
+	transform: scale(1);
+	transition: 0.1s;
+	background-color: #0D4CD4;
+}
+
+/* Footer */
+footer {
+	margin-top: 20px;
+	position: relative;
+	width: 1900px;
+	height: 200px;
+	border:1px solid red;
+	background-color: rgb(0 1 47);
+	color: white;
+}
+#footerHeader {
+	width: 100%;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background-color: rgb(61 59 99);
+}
+#footerHeader ul li {
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-right: 1px solid #010E3D;
+}
+#footerHeader div ,#footerHeader button {
+	margin-left: 10px;
+}
+#footerHeader div {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+#footerHeader button {
+	border: 2px solid #0D4CD4;
+	background-color: #1A94EB;
+	width: 50px;
+	height: 30px;
+	border-radius: 7px;
+}
+#footerLogo img {
+	width: 120px;
+	height: 120px;
+}
+
+/* Sign up page*/
+.captionText {
+	margin-bottom: 10px;
+	font-size: 30px;
+	padding-left: 450px;
+}
+#signUpForm {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	font-size: 20px;
+	justify-content: center;
+}
+.inputText {
+	display: flex;
+	margin-bottom: 10px;
+	padding-left: 450px;
+}
+#signUpHeader {
+	text-align: center;
+	font-size: 40px;
+	width: 1520px;
+	padding-bottom: 15px;
+}
+.SignUpDiv {
+	width: 1520px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-top: 3px solid #1A94EB;
+	border-bottom: 3px solid #1A94EB;
+	border-radius: 10px;
+	margin-left: 15px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.SignUpDiv input[type="text"], .SignUpDiv input[type="password"] {
+	display: inline-block;
+	width: 300px;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 15px;
+	font-size: 20px;
+	padding-left: 15px;
+	outline: none;
+	border: 3px solid #1A94EB;
+}
+.SignUpDiv input[type="button"] {
+	display: inline-block;
+	height: 54px;
+	width: 60px;
+	font-size: 20px;
+	border-radius: 15px;
+	outline: none;
+	border: 3px solid #0D4CD4;
+	background-color: #1A94EB;
+}
+.SignUpDiv input[type="button"]:hover {
+	cursor: pointer;
+	transition: 0.05s;
+	transform: scale(1.05);
+}
+.SignUpDiv input[type="button"]:active {
+	background-color: #0D4CD4;
+	transform: scale(1.1);
+	transition: 0.05s;
+}
+.SignUpDiv select {
+	display: inline-block;
+	height: 54px;
+	width: 230px;
+	border: 3px solid #1A94EB;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 15px;
+	font-size: 20px;
+}
+.SignUpDiv select:focus ,.SignUpDiv input[type="text"]:focus ,.SignUpDiv input[type="password"]:focus {
+	transform: scale(1.02);
+	transition: 0.3s;
+	border: 3px solid #0D4CD4;
+}
+.radio {
+	margin: 0 auto;
+	
+}
+.radio input[type="radio"] {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.radio input[type="radio"]:hover {
+	transition: 0.1s;
+	transform: scale(1.1);
+}
+#subArea {
+	width: 350px;
+}
+#subMitDiv{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+#subMit, #signUpCancle {
+	width: 300px;
+	height: 100px;
+	margin-right: 20px;
+	outline: none;
+	border-radius: 15px;
+	font-size: 40px;
+	line-height: 100px;
+}
+#subMit {
+	border:3px solid #0D4CD4;
+	background-color: #1A94EB;
+}
+#subMit:hover, #signUpCancle:hover {
+	cursor: pointer;
+	transition: 0.05s;
+	transform: scale(1.05);
+}
+#subMit:active {
+	background-color: #0D4CD4;
+	transform: scale(1.1);
+	transition: 0.05s;
+}
+#signUpCancle {
+	background-color: #FF8500;
+	border:3px solid #C44B00;
+}
+#signUpCancle:active {
+	background-color: #C44B00;
+	transform: scale(1.1);
+	transition: 0.05s;
+}
+
+
